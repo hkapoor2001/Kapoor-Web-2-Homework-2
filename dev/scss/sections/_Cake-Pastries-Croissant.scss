@@ -1,0 +1,58 @@
+/* =============
+    Cake-Pastries-Croissant
+============= */
+#hero-2 {
+	@include xl-hero-2 {
+		display: grid;
+		grid-template-columns: auto 1350px auto;
+		grid-template-areas: 
+		". hero-2 .";
+	}
+	
+
+
+		ul {
+			@include md{
+				display: grid;
+				grid-template-columns: 50% auto;
+			}
+
+			@include xl{
+				grid-template-columns: 70% auto;
+				grid-template-areas: 
+				"h2-1 h2-1"
+				"h2-1 h2-3";
+			}
+
+			@include xl-hero-2 {
+				grid-area: hero-2;
+			}
+			
+
+			li {
+				img{
+					width: 100%;
+				}
+				
+			}
+
+			#cakehero {
+				background-image: url("../img/section-4/herospot_2.png");
+
+				
+			}
+
+			#croissanthero {
+				background-image: url("../img/section-4/herospot_3.png");
+
+				
+			}
+
+			#pastriesstackhero {
+				background-image: url("../img/section-4/herospot_4.png");
+				display: none;
+
+				
+			}
+		}
+	}

@@ -1,0 +1,52 @@
+/* =============
+    Buttons
+============= */
+#Buttons{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". Buttons .";
+
+    #Cater{
+        display: grid;
+        grid-template-areas: 
+        ". C1 C2 ."
+        ". C3 C2 .";
+        padding: 16px;
+        padding-bottom:50px;
+        background-color: #FF9595;
+        #circlehero1{
+            border: white 10px;
+        }
+        padding-bottom: 56px;
+        margin-bottom: 56px;
+    }
+
+    #Pickup{
+        display: grid;
+        grid-template-areas: 
+        ". P1 P2 ."
+        ". P3 P2 .";
+        padding: 16px;
+        background-color: #FF9595;
+        #circlehero1{
+            border: white 2px;
+        }
+        padding-bottom: 56px;
+        margin-bottom: 56px;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+    >div{
+        grid-area: Buttons;
+
+        ul{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+        }
+    }
+}
+}

@@ -1,0 +1,108 @@
+/* =============
+    Menu
+============= */
+#Menu{
+
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". new .";
+    }
+
+    @include lg{
+        grid-template-columns: auto 1024px auto;
+    }
+   
+    >div{
+
+        @include md{
+            grid-area: new;
+        }
+
+        h1{
+
+        }
+
+        ul{
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: "m1 m1 m2 m2"
+                "m3 m3 m4 m4"
+                ". m5 m5 .";
+                gap: 16px;
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "m1 m1 m2 m2 m3 m3"
+                ". m4 m4 m5 m5 .";
+            }
+    
+            li{
+    
+                img{
+                    width: 100%;
+                }
+    
+                section{
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new-content .";
+                    >div{
+                        grid-area: new-content;
+                    }
+                }
+            }
+
+            #m1{
+                background-color: #FA7583;
+                @include md{
+                    grid-area: m1;
+                }
+            }
+
+            #m2{
+                background-color: #FA7583;
+                padding-right: 16px;
+                padding-left: 16px;
+                padding-left: 18px;
+                @include md{
+                    grid-area: m2;
+                }
+            }
+
+            #m3{
+                background-color: #FA7583;
+                padding-right: 16px;
+                padding-left: 16px;
+                padding-left: 18px;
+                @include md{
+                    grid-area: m3;
+                }
+            }
+
+            #m4{
+                background-color: #FA7583;
+                padding-right: 16px;
+                padding-left: 16px;
+                padding-left: 18px;
+                @include md{
+                    grid-area: m4;
+                }
+            }
+
+            #m5{
+                background-color: #FA7583;
+                padding-right: 16px;
+                padding-left: 16px;
+                padding-left: 18px;
+                @include md{
+                    grid-area: m5;
+                }
+            }
+        }
+    }
+}

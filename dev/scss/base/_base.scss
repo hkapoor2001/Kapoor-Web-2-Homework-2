@@ -1,0 +1,43 @@
+/* =============
+    Base
+============= */
+
+p, ul, h2, h3, h4, h5, h6 {
+    font-family: 'Fauna One', serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+button{
+    background-color: #E4273B ;
+    color: white;
+    border-radius: 100 px;
+}
+
+a{
+    color: whitesmoke;
+}
+
+.content {
+    margin-bottom: 24px;
+
+    @include md {
+        margin-bottom: 32px;
+    }
+
+    @include xl {
+        margin-bottom: 64px;
+    }
+}
+
+
+.hidden{
+    display: none;
+}
